@@ -2,11 +2,11 @@ package uk.ac.bbsrc.tgac.miso.core.service.naming.validation;
 
 public class OicrProjectShortNameValidator extends RegexValidator {
 
-  private static final String regex = "^[A-Z0-9]{3,5}$";
+  private static final String regex = "^[A-Z0-9]{3,7}$";
 
   public OicrProjectShortNameValidator() {
     super(regex, false, false);
-    setValidationMessage("Short name must be 3-5 characters and include only capital letters and numbers");
+    setValidationMessage("Short name must be 3-7 characters and include only capital letters and numbers");
   }
 
   @Override
